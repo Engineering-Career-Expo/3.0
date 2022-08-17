@@ -1,0 +1,72 @@
+/*
+CALLING FONTS FROM THE ../ASSETS FOLDER (fontface)
+*/
+@font-face {
+    font-family: DM-Sans-500;
+    src: url(../assets/fonts/DM_Sans/DMSans-Medium.ttf);
+}
+@font-face {
+    font-family: Inter-400;
+    src: url(../assets/fonts/Inter/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: Inter-500;
+    src: url(../assets/fonts/Inter/Inter-Medium.ttf);
+}
+@font-face {
+    font-family: Nunito-400;
+    src: url(../assets/fonts/Nunito/Nunito-Regular.ttf);
+}
+@font-face {
+    font-family: Nunito-600;
+    src: url(../assets/fonts/Nunito/Nunito-SemiBold.ttf);
+}
+@font-face {
+    font-family: Nunito-700;
+    src: url(../assets/fonts/Nunito/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: Poppins-600;
+    src: url(../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: Poppins-700;
+    src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Satoshi-700;
+    src: url(../assets/fonts/Satoshi/Satoshi-Bold.otf);
+}
+@font-face {
+    font-family: Satoshi-900;
+    src: url(../assets/fonts/Satoshi/Satoshi-Black.otf);
+}
+@font-face {
+    font-family: Sora-300;
+    src: url(../assets/fonts/Sora/Sora-Light.ttf);
+}
+  
+  /* Removing some default styles */
+  
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-style: normal;
+    text-decoration: none;
+    /* list-style: none; */
+}
+html,
+body {
+    width: 100%;
+    background: #F3F8FF;
+    overflow-x: hidden;
+}
+body > section, body > footer {
+    position: relative;
+}
+.position-absolute {
+    position: absolute;
+}
