@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="ECX Landing page" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>ECX | welcome</title>
   </head>
   <body>
@@ -17,7 +18,7 @@
           <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
           <div class="backdrop"></div>
         <ul class="primary-navigation close" id="primary-navigation" data-visible="false">
-          <li id="close"> 
+          <li id="close">
             <a href="#about-us"
               >About
               <i><img src="assets/icons/caret.svg" alt="dropdown icon" /></i
@@ -293,8 +294,154 @@
       </a>
     </section>
 
+    <section class="events">
+      <h2 class="events-heading-title">Events</h2>
+      <div class="gallery-slide-container events-slide-container ">
+        <div class="events-slide-content mySwiper" >
+          <div class="gallery-image-wrapper swiper-wrapper">
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div> -->
+      </div>
+      <h2 class="events-upcoming">Upcoming Events</h2>
 
-    <section id="gallery">
+      <div class="event-card">
+        <div class="event-date">
+          <h2>22</h2>
+          <p>AUG</p>
+          <div></div>
+        </div>
+        <div class="event-title-card">
+          <div class="event-title">
+            <p class="title">Soft Skill Training</p>
+            <p class="clock-time">
+              <span><img src="assets/images/clock.svg" alt="clock" /></span>12:00 pm
+              - 5:00 pm
+            </p>
+          </div>
+          <div class="event-learn-more">
+            <p>Learn more</p>
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-date">
+          <h2>10</h2>
+          <p>OCT</p>
+          <div></div>
+        </div>
+        <div class="event-title-card">
+          <div class="event-title">
+            <p class="title">Hackathon</p>
+            <p class="clock-time">
+              <span><img src="assets/images/clock.svg" alt="clock" /></span>12:00 pm
+              - 5:00 pm
+            </p>
+          </div>
+          <div class="event-learn-more">
+            <p>Learn more</p>
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-date">
+          <h2>15</h2>
+          <p>OCT</p>
+          <div></div>
+        </div>
+        <div class="event-title-card">
+          <div class="event-title">
+            <p class="title">ECX 3.0 Grand Finale</p>
+            <p class="clock-time">
+              <span><img src="assets/images/clock.svg" alt="clock" /></span>12:00 pm
+              - 5:00 pm
+            </p>
+          </div>
+          <div class="event-learn-more">
+            <p>Learn more</p>
+          </div>
+        </div>
+      </div>
+      <div class="events-btn">
+        <a href="#"
+          >View all
+          <span><img src="assets/images/btn-arrow.svg" alt="Learn more" /></span
+        ></a>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery-title">
+        <h2>Our Gallery</h2>
+        <p>Some awesome moments captured in frames.</p>
+      </div>
+
+      <div class="gallery-slide-container mySwiper">
+        <!-- <div class="gallery-slide-content"> -->
+          <div class="gallery-image-wrapper swiper-wrapper">
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-1.jpg" alt="" class="gallery-img" />
+            </div>
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-2.jpg" alt="" class="gallery-img" />
+            </div>
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-1.jpg" alt="" class="gallery-img" />
+            </div>
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-2.jpg" alt="" class="gallery-img" />
+            </div>
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-1.jpg" alt="" class="gallery-img" />
+            </div>
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-2.jpg" alt="" class="gallery-img" />
+            </div>
+          </div>
+        <!-- </div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="events-btn">
+        <a href="#"
+          >View all
+          <span><img src="assets/images/btn-arrow.svg" alt="Learn more" /></span
+        ></a>
+      </div>
+    </section>
+
+    <!-- <section id="gallery">
       <article>
         <h2>Gallery</h2>
         <div class="gallery-img-ctrl">
@@ -395,7 +542,7 @@
         style="top: 36px; left: calc(15% + 2px); z-index: 3;"
         alt=""
       />
-    </section>
+    </section> -->
 
     <section id="teams">
       <article id="teams-heading">
@@ -522,82 +669,6 @@
       </button>
     </section>
 
-    <section class="events">
-      <h3 class="title">Events</h3>
-      <div class="links">
-        <a href="#">Overview of Past Events</a>
-        <a href="#">Upcoming Events</a>
-      </div>
-
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="card-image">
-            <img src="./assets/images/ui-ux.png" alt="" class="card-img" />
-          </div>
-          <h6>Introduction to UI/UX Design</h6>
-          <p>
-            This course is designed for the absolute beginner, meaning no
-            previous experience with Photoshop is required. All you need to get
-            started is your Adobe Photoshop CC 2017 or versions after and the
-            willingness to create awesomeness!
-          </p>
-          <button>
-            Learn More
-            <span><img src="./assets/images/btn-arrow.svg" alt="Next arrow" /></span>
-          </button>
-        </div>
-        <div class="card">
-          <div class="card-image">
-            <img src="./assets/images/python.png" alt="" class="card-img" />
-          </div>
-          <h6>Python</h6>
-          <p>
-            This course is designed for the absolute beginner, meaning no
-            previous experience with Photoshop is required. All you need to get
-            started is your Adobe Photoshop CC 2017 or versions after and the
-            willingness to create awesomeness!
-          </p>
-          <button>
-            Learn More
-            <span><img src="./assets/images/btn-arrow.svg" alt="Next arrow" /></span>
-          </button>
-        </div>
-      </div>
-      <div class="card-wrapper2">
-        <div class="card">
-          <div class="card-image">
-            <img src="./assets/images/ui-ux.png" alt="" class="card-img" />
-          </div>
-          <h6>Introduction to UI/UX Design</h6>
-          <p>
-            This course is designed for the absolute beginner, meaning no
-            previous experience with Photoshop is required. All you need to get
-            started is your Adobe Photoshop CC 2017 or versions after and the
-            willingness to create awesomeness!
-          </p>
-          <button>
-            Learn More
-            <span><img src="./assets/images/btn-arrow.svg" alt="Next arrow" /></span>
-          </button>
-        </div>
-        <div class="card">
-          <div class="card-image">
-            <img src="./assets/images/ui-ux.png" alt="" class="card-img" />
-          </div>
-          <h6>Introduction to UI/UX Design</h6>
-          <p>
-            This course is designed for the absolute beginner, meaning no
-            previous experience with Photoshop is required. All you need to get
-            started is your Adobe Photoshop CC 2017 or versions after and the
-            willingness to create awesomeness!
-          </p>
-          <button class="events-btn">
-            Learn More
-            <span><img src="./assets/images/btn-arrow.svg" alt="Next arrow" /></span>
-          </button>
-        </div>
-      </div>
-    </section>
     
     <section id="contact">
       <article class="contact-sect-heading">
@@ -691,6 +762,8 @@
         <p>Copyright ECX 3.0. All Rights Reserved <br> Developed by <i>ECX Website Team</i></p>
       </div>
     </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

@@ -8,10 +8,8 @@ const nextBtnPaths = document.querySelectorAll("svg#nxt-btn > path");
 const imageCont = document.querySelector("#image-container");
 const nav = document.querySelector(".primary-navigation")
 const mobileMenuButton = document.querySelector(".mobile-nav-toggle");
-const closed = document.querySelector(".close li");
+const closed = document.querySelectorAll(".close li");
 const backdrop = document.querySelector(".backdrop");
-
-
 
 const openNav = () => {
     nav.setAttribute("data-visible", true);
@@ -63,6 +61,8 @@ nextButton.onclick = function() {
     })
     imageCont.scrollLeft += 100;
 };
+
+
 //stroke="#3269F9"; stroke-opacity
 //  [2].setAttribute("stroke", "#3269F9");
 // prevBtnPaths[2].setAttribute("stroke-opacity", "1");
