@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.waitlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(/3.0-master/assets/images/waitlist-bg.png) no-repeat center/cover;
+    position: relative;
+    height: 100vh;
+}
+
+.waitlist h2 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 1rem;
+    color: #4D4D4D;
+}
+
+.waitlist p {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 4rem;
+    color: #4D4D4D;
+}
+
+.waitlist .email-input > label{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    color: #808080;
+}
+
+.email-input input{
+    height: 3rem;
+    width: 25rem;
+    padding-left: 2rem;
+    background: #FFFFFF;
+    border: 1px solid #808080;
+    margin-top: 1rem;
+    border-radius: 4px;
+    margin-bottom: 3rem;
+}
+
+.join button {
+    background: #3E84F8;
+    color: #fff;
+    padding: 1rem 7rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.back button {
+    border: #3E84F8 1px solid;
+    color: #3E84F8;
+    background-color: #fff;
+    padding: 1rem 6.8rem;
+    border-radius: 5px;
+}
+
+.bg-man {
+    position: absolute;
+    left: 10rem;
+    bottom: 0rem;
+}
+
+.bg-woman {
+    position: absolute;
+    right: 10rem;
+    bottom: 0rem;
+}

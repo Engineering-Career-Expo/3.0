@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOIN ECX</title>
+    <link rel="stylesheet" href="css/join-ecx.css" />
+  </head>
+  <body>
+    <div class="header-p">
+      <p>Having issues with the form? <a href="/">Contact us</a></p>
+    </div>
+    <section class="ecx-form">
+      <div class="form-header">
+        <h2>Join ECX today</h2>
+      </div>
+      <form action="" method="POST">
+        <div class="names">
+          <div class="first-name">
+            <label for="firstname">First name</label><br />
+            <input
+              type="text"
+              id="firstname"
+              name="first-name"
+              minlength="2"
+              placeholder="John"
+              required
+            />
+          </div>
+          <div>
+            <label for="lastname">Last name</label><br />
+            <input
+              type="text"
+              id="lastname"
+              name="last-name"
+              minlength="2"
+              placeholder="Doe"
+              required
+            />
+          </div>
+        </div>
+        <div class="email">
+          <label for="email_address">Email</label><br />
+          <input
+            type="email"
+            id="email_address"
+            name="email_address"
+            placeholder="johndoe@gmail.com"
+            required
+          />
+        </div>
+
+        <div class="radio-input student">
+          <label for="student">Are you a student?</label><br />
+          <fieldset id="student">
+            <label><input type="radio" value="yes" name="student" /> Yes</label>
+            <label><input type="radio" value="yes" name="student" /> No</label>
+          </fieldset>
+        </div>
+
+        <div class="faculty">
+          <label for="faculty">Faculty</label><br />
+          <input list="faculty" name="faculty" />
+          <datalist id="faculty">
+            <option value="Faculty of Arts"></option>
+            <option value="Faculty of Basic Medical Science"></option>
+            <option value="Faculty of Engineering"></option>
+            <option value="Faculty of Law"></option>
+            <option value="Faculty of Management Science"></option>
+            <option value="Faculty of Clinical Science"></option>
+            <option value="Faculty of Dental Science"></option>
+            <option value="Faculty of Education"></option>
+            <option value="Faculty of Science"></option>
+            <option value="Faculty of Social Science"></option>
+            <option value="Faculty of Pharmacy"></option>
+          </datalist>
+        </div>
+
+        <div class="department">
+          <label for="department">Department</label><br />
+          <input type="text" id="department" name="department" />
+        </div>
+
+        <div class="level">
+          <label for="level">Level</label><br />
+          <select name="level" id="level">
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+            <option value="500">500</option>
+            <option value="600">600</option>
+            <option value="700">700</option>
+          </select>
+        </div>
+
+        <div class="radio-input gender">
+          <label for="gender">Gender</label><br />
+          <fieldset id="gender">
+            <label
+              ><input type="radio" value="Male" name="gender" /> Male</label
+            >
+            <label
+              ><input type="radio" value="Female" name="gender" /> Female</label
+            >
+          </fieldset>
+        </div>
+
+        <div class="number">
+          <label for="number">Phone number</label><br />
+          <input
+            type="tel"
+            pattern="[+]{1}[0-9]{11,14}"
+            placeholder="+2348067569843"
+          />
+        </div>
+
+        <div class="ecx-button">
+          <button type="submit">Join ECX</button>
+        </div>
+      </form>
+      <!-- </div> -->
+    </section>
+  </body>
+</html>
