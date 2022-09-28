@@ -6,40 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="ECX Landing page" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>ECX | welcome</title>
   </head>
   <body>
-    <header class="hero">
-      <nav>
+    <div class="nav">
+      <nav class="navbar">
         <div class="logo">
-          <img src="assets/images/Logo.svg" alt="logo" />
+          <a href="#"><img src="assets/images/Logo.svg" alt="logo" /></a>
         </div>
-        <div class="mobile-menu">
-          <div class="top-bar"></div>
-          <div class="middle-bar"></div>
-          <div class="bottom-bar"></div>
-        </div>
-        <ul>
-          <li>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+          <div class="backdrop"></div>
+        <ul class="primary-navigation close" id="primary-navigation" data-visible="false">
+          <li id="close">
             <a href="#about-us"
               >About
               <i><img src="assets/icons/caret.svg" alt="dropdown icon" /></i
             ></a>
           </li>
-          <li><a href="#what-we-do">What we do</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#teams">Team</a></li>
+          <li><a id="close" href="#what-we-do">What we do</a></li>
+          <li><a id="close" href="#gallery">Gallery</a></li>
+          <li><a id="close" href="#teams">Team</a></li>
           <li>
             <a href="#events"
               >Event
               <i><img src="assets/icons/caret.svg" alt="dropdown icon" /></i
             ></a>
           </li>
-          <li><a href="#subscription">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>Join ECX</li>
+          <li><a id="close" href="#subscription">Blog</a></li>
+          <li><a id="close" href="#contact">Contact</a></li>
+          <li><a id="close" href="#" class="join-ecx">Join ECX</a></li>
         </ul>
       </nav>
+    </div>
+
+    <header class="hero">
       <section id="hero-sect">
         <article id="hero-txt">
           <h1><i>Empowering</i> the next generation of leaders</h1>
@@ -293,8 +294,154 @@
       </a>
     </section>
 
+    <section class="events">
+      <h2 class="events-heading-title">Events</h2>
+      <div class="gallery-slide-container events-slide-container ">
+        <div class="events-slide-content mySwiper" >
+          <div class="gallery-image-wrapper swiper-wrapper">
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+            <div class="gallery-image events-image swiper-slide">
+              <img src="./assets/images/grand.jpg" alt="" class="gallery-img" />
+               <h2>ECX 1.0 Grand Finale</h2>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div> -->
+      </div>
+      <h2 class="events-upcoming">Upcoming Events</h2>
 
-    <section id="gallery">
+      <div class="event-card">
+        <div class="event-date">
+          <h2>22</h2>
+          <p>AUG</p>
+          <div></div>
+        </div>
+        <div class="event-title-card">
+          <div class="event-title">
+            <p class="title">Soft Skill Training</p>
+            <p class="clock-time">
+              <span><img src="assets/images/clock.svg" alt="clock" /></span>12:00 pm
+              - 5:00 pm
+            </p>
+          </div>
+          <div class="event-learn-more">
+            <p>Learn more</p>
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-date">
+          <h2>10</h2>
+          <p>OCT</p>
+          <div></div>
+        </div>
+        <div class="event-title-card">
+          <div class="event-title">
+            <p class="title">Hackathon</p>
+            <p class="clock-time">
+              <span><img src="assets/images/clock.svg" alt="clock" /></span>12:00 pm
+              - 5:00 pm
+            </p>
+          </div>
+          <div class="event-learn-more">
+            <p>Learn more</p>
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-date">
+          <h2>15</h2>
+          <p>OCT</p>
+          <div></div>
+        </div>
+        <div class="event-title-card">
+          <div class="event-title">
+            <p class="title">ECX 3.0 Grand Finale</p>
+            <p class="clock-time">
+              <span><img src="assets/images/clock.svg" alt="clock" /></span>12:00 pm
+              - 5:00 pm
+            </p>
+          </div>
+          <div class="event-learn-more">
+            <p>Learn more</p>
+          </div>
+        </div>
+      </div>
+      <div class="events-btn">
+        <a href="#"
+          >View all
+          <span><img src="assets/images/btn-arrow.svg" alt="Learn more" /></span
+        ></a>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery-title">
+        <h2>Our Gallery</h2>
+        <p>Some awesome moments captured in frames.</p>
+      </div>
+
+      <div class="gallery-slide-container mySwiper">
+        <!-- <div class="gallery-slide-content"> -->
+          <div class="gallery-image-wrapper swiper-wrapper">
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-1.jpg" alt="" class="gallery-img" />
+            </div>
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-2.jpg" alt="" class="gallery-img" />
+            </div>
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-1.jpg" alt="" class="gallery-img" />
+            </div>
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-2.jpg" alt="" class="gallery-img" />
+            </div>
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-1.jpg" alt="" class="gallery-img" />
+            </div>
+            <div class="gallery-image swiper-slide">
+              <img src="assets/images/gallery-2.jpg" alt="" class="gallery-img" />
+            </div>
+          </div>
+        <!-- </div> -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="events-btn">
+        <a href="#"
+          >View all
+          <span><img src="assets/images/btn-arrow.svg" alt="Learn more" /></span
+        ></a>
+      </div>
+    </section>
+
+    <!-- <section id="gallery">
       <article>
         <h2>Gallery</h2>
         <div class="gallery-img-ctrl">
@@ -395,7 +542,7 @@
         style="top: 36px; left: calc(15% + 2px); z-index: 3;"
         alt=""
       />
-    </section>
+    </section> -->
 
     <section id="teams">
       <article id="teams-heading">
@@ -521,6 +668,7 @@
         <img src="assets/icons/btn-arrow-left.svg" alt="" />
       </button>
     </section>
+
     
     <section id="contact">
       <article class="contact-sect-heading">
@@ -614,6 +762,8 @@
         <p>Copyright ECX 3.0. All Rights Reserved <br> Developed by <i>ECX Website Team</i></p>
       </div>
     </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

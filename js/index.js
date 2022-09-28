@@ -6,28 +6,62 @@ const nextButton = document.querySelector("svg#nxt-btn");
 const prevBtnPaths = document.querySelectorAll("svg#prev-btn > path");
 const nextBtnPaths = document.querySelectorAll("svg#nxt-btn > path");
 const imageCont = document.querySelector("#image-container");
-prevButton.onclick = function() {
-    nextBtnPaths.forEach((path)=>{
-        path.setAttribute("stroke", "#000000");
-        path.setAttribute("stroke-opacity", "0.53");
-    })
-    prevBtnPaths.forEach((path)=>{
-        path.setAttribute("stroke", "#3269F9");
-        path.setAttribute("stroke-opacity", "1");
-    })
-    imageCont.scrollLeft -= 100;
+const nav = document.querySelector(".primary-navigation");
+const mobileMenuButton = document.querySelector(".mobile-nav-toggle");
+const closed = document.querySelectorAll(".close li");
+const backdrop = document.querySelector(".backdrop");
+
+const openNav = () => {
+  nav.setAttribute("data-visible", true);
+  mobileMenuButton.setAttribute("aria-expanded", true);
+  backdrop.style.display = "block";
 };
-nextButton.onclick = function() {
-    prevBtnPaths.forEach((path)=>{
-        path.setAttribute("stroke", "#000000");
-        path.setAttribute("stroke-opacity", "0.53");
-    })
-    nextBtnPaths.forEach((path)=>{
-        path.setAttribute("stroke", "#3269F9");
-        path.setAttribute("stroke-opacity", "1");
-    })
-    imageCont.scrollLeft += 100;
+
+const closeNav = () => {
+  nav.setAttribute("data-visible", false);
+  mobileMenuButton.setAttribute("aria-expanded", false);
+  backdrop.style.display = "none";
 };
+
+mobileMenuButton.addEventListener("click", () => {
+  const visibility = nav.getAttribute("data-visible");
+  if (visibility === "false") {
+    openNav();
+  } else {
+    closeNav();
+  }
+});
+
+backdrop.addEventListener("click", () => {
+  closeNav();
+});
+closed.addEventListener("click", () => {
+  closeNav();
+});
+
+prevButton.onclick = function () {
+  nextBtnPaths.forEach((path) => {
+    path.setAttribute("stroke", "#000000");
+    path.setAttribute("stroke-opacity", "0.53");
+  });
+  prevBtnPaths.forEach((path) => {
+    path.setAttribute("stroke", "#3269F9");
+    path.setAttribute("stroke-opacity", "1");
+  });
+  imageCont.scrollLeft -= 100;
+};
+nextButton.onclick = function () {
+  prevBtnPaths.forEach((path) => {
+    path.setAttribute("stroke", "#000000");
+    path.setAttribute("stroke-opacity", "0.53");
+  });
+  nextBtnPaths.forEach((path) => {
+    path.setAttribute("stroke", "#3269F9");
+    path.setAttribute("stroke-opacity", "1");
+  });
+  imageCont.scrollLeft += 100;
+};
+
 //stroke="#3269F9"; stroke-opacity
 //  [2].setAttribute("stroke", "#3269F9");
 // prevBtnPaths[2].setAttribute("stroke-opacity", "1");
